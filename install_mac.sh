@@ -39,6 +39,9 @@ brew cask install iterm2
 brew install jenv
 brew cask install java
 brew cask install intellij-idea-ce
+brew cask install disk-inventory-x
+
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 
 ## get from App Store
