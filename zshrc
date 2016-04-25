@@ -47,7 +47,11 @@ HISTCONTROL=ignoreboth
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git ruby autojump rvm mvn)
-plugins=(git node mvn docker brew)
+plugins=(git node mvn docker brew sublime history cp github oc)
+
+if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
+  FPATH=/usr/local/share/zsh/site-functions:$FPATH
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,7 +103,7 @@ if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
-export PATH=$PATH:~/Software/bin
+export PATH=$PATH:~/bin
 
 #eval `dircolors ~/.ls_colors`
 
@@ -141,3 +145,4 @@ if which jenv > /dev/null; then
    	eval "$(jenv init -)";
 fi
 
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
