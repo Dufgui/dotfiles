@@ -122,8 +122,7 @@ if [ -d $HOME/.gvm/groovy/current/bin ]; then
 	PATH=$PATH:$HOME/.gvm/groovy/current/bin
 fi
 
-
-if [ -d $HOME/devhome/app/apache-maven-*/bin/ ]; then
+if ls $HOME/devhome/app/apache-maven-*/bin/ 2>/dev/null 1>/dev/null; then
 	PATH=$PATH:`dirname $HOME/devhome/app/apache-maven-*/bin/mvn`
 fi
 
@@ -146,3 +145,10 @@ if which jenv > /dev/null; then
 fi
 
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+
+/usr/local/Cellar/ponysay/3.0.2_1/bin/ponysay Hello Duff
+
+# tabtab source for yo package
+# uninstall by removing these lines or running `tabtab uninstall yo`
+[[ -f /usr/local/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /usr/local/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
+
