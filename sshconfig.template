@@ -5,3 +5,7 @@ Host myhost
 	User mylogin
 #	ProxyCommand ssh -q login@myfronthost nc -q0 %h %p
 #	ProxyCommand ssh -W %h:%p <srv_intermédiaire>
+
+Host feral
+	User myaccount
+	HostName helios.feralhosting.com
