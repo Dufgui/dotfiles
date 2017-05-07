@@ -8,9 +8,12 @@ echo Install and Set San Francisco as System Font
 ruby -e "$(curl -fsSL https://raw.github.com/wellsriley/YosemiteSanFranciscoFont/master/install)"
 echo Install Homebrew, Postgres, wget and cask
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo Install oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 brew tap homebrew/science
 brew install wget
 brew cask install sshfs
+brew cask install SourceTree
 #brew install postgresql
 #brew install go
 brew install node
