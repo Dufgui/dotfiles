@@ -47,7 +47,7 @@ HISTCONTROL=ignoreboth
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git ruby autojump rvm mvn)
-plugins=(git node mvn docker brew sublime history cp github oc)
+plugins=(git node mvn docker brew sublime history cp github oc jhipster)
 
 if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
   FPATH=/usr/local/share/zsh/site-functions:$FPATH
@@ -145,10 +145,12 @@ if which jenv > /dev/null; then
 fi
 
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+~/dotfile/DO_NOT_COMMIT
 
-/usr/local/Cellar/ponysay/3.0.2_1/bin/ponysay Hello Duff
+/usr/local/Cellar/ponysay/3.0.3/bin/ponysay Hello Duff
 
 # tabtab source for yo package
 # uninstall by removing these lines or running `tabtab uninstall yo`
 [[ -f /usr/local/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /usr/local/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
+
 
