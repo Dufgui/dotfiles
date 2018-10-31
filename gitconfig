@@ -28,6 +28,7 @@
     lg = log --oneline
     prev = checkout HEAD^1
     next = "!sh -c 'git log --reverse --pretty=%H master | awk \"/$(git rev-parse HEAD)/{getline;print}\" | xargs git checkout'"
+    rmm = "!sh -c 'git branch --merged | egrep -v \"(^\\*|master|dev)\" | xargs git branch -d'"
 [core]
     editor = /usr/bin/vim
     pager = less -erX
